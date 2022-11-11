@@ -18,12 +18,27 @@ For the baseline model I used a Logistic Regression model. I wanted to use somet
 
 Next I focused on more advanced models and using GridSearchCV to find the best hyperparameters in order to obtain the best scores. The first model I tried here was a perceptron. It only performed at 73% so rather than spending more time I moved on. I then trained a decision tree which got a 69% validation score. While this was much lower, I know the grid search would help, and the model then obtained a 75% training score and a 76% test score. The final model was XGBoost model. The initial version had a train score of 80% and a test score of 76%. 
 
-# Step 4 - Best Model and Feature Importance
+Important note regarding model metrics - A classification report was printed after every model and the percision score did not exceed 80% for the No Arrest target, which means none of the models were purely guessing No Arrest over actually learning something from the data. 
 
-The XGBoost model performed the best and I used this model to obtain the feature importance and learn about what it used as weights for the features. 
+## Step 4 - Best Model and Feature Importance
+
+The XGBoost model performed the best and I used this model to obtain the feature importance and learn about what it used as weights for the features. Precinct was overwhemingly the best predictor for this model, followed by Beat and Sector. Intuitively, this makes sense, location is important. Neighborhoods are often policed differently, but from this data alone, no further conclusions can be drawn.
+
+<img width="987" alt="Screen Shot 2022-11-11 at 5 31 26 PM" src="https://user-images.githubusercontent.com/104473048/201439833-9499273e-9ff5-4862-8ea5-ef6994c40d8e.png">
+
+<img width="390" alt="Screen Shot 2022-11-11 at 5 33 47 PM" src="https://user-images.githubusercontent.com/104473048/201439930-9397fae4-78c5-4bb0-b266-dab5de41d87c.png">
+
+## Notes about 'Arrest Flag' feature
+
+When this feature was added, the best model actually obtained an 86% train score, and an 80% test score. The feature was the number one most important feature with nearly a .5 weight for importance. If the goal in the future is to strictly predict if an arrest was made, adding this feature would be benificial to all future modeling. However, due to the overlap between this feature and the target, including it pushes other important features further down the list, and may make it harder to draw better conclusions. Use this feature appropriatly in the future.
+
+<img width="971" alt="Screen Shot 2022-11-11 at 5 42 38 PM" src="https://user-images.githubusercontent.com/104473048/201440637-2923932e-0d68-49c7-95e1-2f14b6b2d4a5.png">
+
+## Reccomendations
+
+Like I mentioned above, location is a key feature and should be further explored. Obtaining socioeconomic data in the form of a census, with features like income, population, population by race. Historically these features paint a better picture about policing in different neighborhoods. Having that data here would be insightful, but without it, no further conclusions can be drawn.
 
 ## Repository Structure
-
 
 ```
 ├── data
