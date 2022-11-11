@@ -22,14 +22,13 @@ Next I focused on more advanced models and using GridSearchCV to find the best h
 
 The XGBoost model performed the best and I used this model to obtain the feature importance and learn about what it used as weights for the features. 
 
+## Repository Structure
+
+
+```
 ├── data
-
 ├──.gitignore
-
-├── Terry Stops Presentation.pdf
-
+├── Project 2 presentation.pdf
 ├── README.md
-
 ├── student.ipynd
-
 └── student.pdf
