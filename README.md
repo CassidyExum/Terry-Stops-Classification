@@ -26,7 +26,7 @@ The XGBoost model performed the best and I used this model to obtain the feature
 
 <img width="987" alt="Screen Shot 2022-11-11 at 5 31 26 PM" src="https://user-images.githubusercontent.com/104473048/201439833-9499273e-9ff5-4862-8ea5-ef6994c40d8e.png">
 
-<img width="390" alt="Screen Shot 2022-11-11 at 5 33 47 PM" src="https://user-images.githubusercontent.com/104473048/201439930-9397fae4-78c5-4bb0-b266-dab5de41d87c.png">
+<img width="771" alt="Screen Shot 2022-11-13 at 4 42 12 PM" src="https://user-images.githubusercontent.com/104473048/201545997-940f119c-62eb-4d9e-bf23-755f2517c6fd.png">
 
 ## Notes about 'Arrest Flag' feature
 
