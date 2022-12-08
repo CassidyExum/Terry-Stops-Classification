@@ -41,10 +41,13 @@ Like I mentioned above, location is a key feature and should be further explored
 ## Repository Structure
 
 ```
-├── .gitignore
-├── Columns.txt
-├── Notebook.ipynd
-├── Notebook.pdf
-├── Predicting Arrests using Terry Stops Data.pdf
-├── README.md
-└── Terry_Stops.csv
+.
+└── Repository Structure
+    ├── Data
+    │   ├── Terry_Stops.csv
+    │   └── columns.txt
+    ├── .gitignore
+    ├── Notebook.ipynb
+    ├── Notebook.pdf
+    ├── Predicting Arrests using Terry Stops Data.pdf
+    └── README.md
