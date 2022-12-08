@@ -42,7 +42,7 @@ Like I mentioned above, location is a key feature and should be further explored
 
 ```
 .
-└── Repository Structure
+└── Terry-Stops-Classification
     ├── Data
     │   ├── Terry_Stops.csv
     │   └── columns.txt
